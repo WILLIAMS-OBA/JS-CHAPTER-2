@@ -1,8 +1,8 @@
-for(let rows = 1; rows <= 8; rows ++){
-    if (rows % 2 != 0){
-    console.log("# # # #");
-    }
-    else if (rows % 2 == 0){
-    console.log(" # # # #")
-    }
+const prompt = require("prompt-sync")()
+
+let rows = Number(prompt("Enter a number: "))
+
+
+for(; rows >= 1; rows --){
+console.log(rows % 2 ==0 ? " # # # #"  :    "# # # #")
 }
